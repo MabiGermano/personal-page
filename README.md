@@ -1,2 +1,2 @@
 # site-pessoal
-isso é oq?
+Projeto do meu site pessoal
