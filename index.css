@@ -87,13 +87,14 @@ header p{
 section#projetos{
     width: 100%;
     min-width: 1800px;
-    height: 800px;
+    height: 750px;
     background-color: #E5E5E5;
     position: absolute;
     top: 750px;
     left: 0px;
     text-align: center;
 }
+
 
 .card{
     background-color: #FFF;
@@ -157,14 +158,20 @@ section#projetos{
     width: 200px;
     height: 120px;
 }
-#projetos > h2{
+#titulo-projetos{
+
+    position: absolute;
+    left: 450px;
+}
+
+#titulo-projetos > h2{
     color: #714948;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
 }
-#projetos > h3{
+#titulo-projetos > h3{
     color: #F15350;
     font-family: Roboto;
     font-style: normal;
