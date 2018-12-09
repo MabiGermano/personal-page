@@ -196,11 +196,19 @@ form{
 }
 
 form > div{margin: 5px;}
-    label{display: block;
-    color:#FFF;
+
+    .label-form{display: block;
+    color: #FFF;
     font-weight: bolder;
+    font-size: 5px;
     margin-bottom: 2px;
-}
+    -webkit-transition: font-size 0.5s;
+    transition: font-size 0.3s;
+    }
+    .label-form-show{
+       font-size: 16px;
+
+    }
 input,textarea{
     border-radius: 10px;
     
@@ -213,9 +221,7 @@ input,textarea{
     border-radius: 10px;
     padding: 5px;
 }
-placeholder{
-    font-style: italic;
-}
+
 #nome,#mensagem{
 
     width: 100%;

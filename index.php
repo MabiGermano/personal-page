@@ -8,7 +8,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
     <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Roboto" rel="stylesheet">
-    <script src="main.js"></script>
+    <script src="eventos.js"></script>
 </head>
 <body>
     <header>
@@ -53,21 +53,21 @@
         <h2>Contato</h2>
         <form>
         <div>
-            <label for="nome" id="label-nome"></label>
+            <label for="nome" id="label-nome" class="label-form"></label>
             <input type="text" name="nome" id="nome" class="linha1" placeholder="Nome" alt="Nome" required>
         </div>
         
         <div id="div-assunto">
-            <label for="assunto" id="label-assunto"></label>
+            <label for="assunto" id="label-assunto" class="label-form"></label>
             <input type="text" name="assunto" id="assunto" class="linha2" placeholder="Assunto" alt="Assunto" required>
         </div>
 
         <div id="div-email">
-            <label for="email" id="label-email"></label>
-            <input type="email" name="email" id="email" class="linha2" placeholder="Email" alt="Email" required>
+            <label for="email" id="label-email" class="label-form"></label>
+            <input type="email" name="email" id="email" onkeydown="funcEmail()" onblur="sumir()" class="linha2" placeholder="Email" alt="Email" required>
         </div>
         <div id="div-mensagem">
-            <label for="mensagem" id="label-mensagem"></label>
+            <label for="mensagem" id="label-mensagem" class="label-form"></label>
             <textarea name="mensagem" id="mensagem" class="linha3" cols="30" rows="10" placeholder="Mensagem" alt="Mensagem" required></textarea>
         </div>
         
@@ -75,7 +75,6 @@
         </form>
     </address>
 
-<>
 
 </body>
 </html>
