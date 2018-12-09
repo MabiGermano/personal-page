@@ -53,27 +53,29 @@
         <h2>Contato</h2>
         <form>
         <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" class="linha1"  alt="Nome" required>
+            <label for="nome" id="label-nome"></label>
+            <input type="text" name="nome" id="nome" class="linha1" placeholder="Nome" alt="Nome" required>
         </div>
         
         <div id="div-assunto">
-            <label for="assunto">Assunto</label>
-            <input type="text" name="assunto" id="assunto" class="linha2" alt="Assunto" required>
+            <label for="assunto" id="label-assunto"></label>
+            <input type="text" name="assunto" id="assunto" class="linha2" placeholder="Assunto" alt="Assunto" required>
         </div>
 
         <div id="div-email">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" class="linha2"  alt="Email" required>
+            <label for="email" id="label-email"></label>
+            <input type="email" name="email" id="email" class="linha2" placeholder="Email" alt="Email" required>
         </div>
-        <div>
-            <label for="mensagem">Mensagem</label>
+        <div id="div-mensagem">
+            <label for="mensagem" id="label-mensagem"></label>
             <textarea name="mensagem" id="mensagem" class="linha3" cols="30" rows="10" placeholder="Mensagem" alt="Mensagem" required></textarea>
         </div>
         
         <button type="submit">Enviar</button>
         </form>
     </address>
+
+<>
 
 </body>
 </html>

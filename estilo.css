@@ -192,15 +192,19 @@ address{
 form{
     position: absolute;
     top: 70px;
-    left: 50%;
+    left: 55%;
 }
 
 form > div{margin: 5px;}
-label{display: block;}
-input{
+    label{display: block;
+    color:#FFF;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+input,textarea{
     border-radius: 10px;
     
-    border: 1px solid #bbc0c4;
+    border: 1px solid #bebebe;
     line-height: 1.02366864;
    text-shadow: none;
     text-rendering: auto;
@@ -209,18 +213,22 @@ input{
     border-radius: 10px;
     padding: 5px;
 }
+placeholder{
+    font-style: italic;
+}
+#nome,#mensagem{
 
-.linha1{
-
-    display: block;
     width: 100%;
 }
+
 #div-assunto{
     display: inline-block;
 }
+
 #div-email{
     display: inline-block;
 }
+
 button{
     background-color: #FFF;
     padding: 10px;
