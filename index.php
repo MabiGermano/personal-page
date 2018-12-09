@@ -15,9 +15,9 @@
         <img id="logo" src="img/logo.png">
         <nav>
             <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#projetos"><li>Projetos</li></a>
-                <a href="#contato"><li>Contatos</li></a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contatos</a></li>
             </ul>
         </nav>
         <img id="foto-perfil" src="img/me2.jpg">
@@ -35,18 +35,28 @@
             <h2>Projetos</h2>
             <h3>Um pouco mais de quem sou e o que faço:</h3>
         </div>
-        <div class="card" id="card-1" alt="linkedin">
-            <img src="img/linkedin.jpg">
-            <p>Um pouco mais sobre mim...</p>
-        </div>
-        <div class="card" id="card-2">
-            <img src="img/octocat.png">
-            <p>Pequenos projetos...</p>
-        </div>
-        <div class="card" id="card-3">
-            <img src="img/wwCode.jpg">
-            <p>Membro do Woman Who Code</p>
-        </div>
+        <a href="https://www.linkedin.com/in/mbeatriz-germano/" target="_blank">
+            <div class="card" id="card-1" alt="linkedin">
+                <img src="img/linkedin.jpg">
+                <p>Um pouco mais sobre mim...</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/MabiGermano" target="_blank">
+            <div class="card" id="card-2">
+                <img src="img/octocat.png">
+                <p>Pequenos projetos...</p>
+            </div>
+        </a>
+        
+        <a href="https://www.womenwhocode.com/" target="_blank">
+            <div class="card" id="card-3">
+                <img src="img/wwCode.jpg">
+                <p>Pequenos projetos...</p>
+            </div>
+        </a>
+            
+        
     </section>
 
     <address id="contato">

@@ -23,6 +23,17 @@ header img#logo{
     top: 21px;
 }
 
+li > a {
+
+    text-decoration: none;
+    color: #FFF;
+}
+
+li > a:hover{
+    border-bottom: solid #712726;
+    
+}
+
 header ul{
     position: absolute;
     width: 300px;
@@ -86,6 +97,7 @@ header p{
 }
 
 section#projetos{
+    text-decoration: none;
     width: 100%;
     min-width: 1350px;
     height: 750px;
@@ -96,6 +108,10 @@ section#projetos{
     text-align: center;
 }
 
+section > a{
+
+    text-decoration: none;
+}
 
 .card{
     background-color: #FFF;
@@ -125,6 +141,7 @@ section#projetos{
     line-height: normal;
     color: #BE423F;
     
+    text-decoration: none;
     line-height: 1.3    ;
     font-size: 18px;
     margin-bottom: 20px;
