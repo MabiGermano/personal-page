@@ -180,12 +180,50 @@ section#projetos{
     font-size: 25px;
 }
 
-section#contato{
+address{
 
     position: absolute;
     top: 1500px;
     width: 100%;
     min-width: 1350px;
-    height: 300px;
+    height: 500px;
     background: linear-gradient(180deg, #F15350 0%, #BE423F 45.19%, #712726 100%);
+}
+form{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+}
+
+form > div{margin: 5px;}
+label{display: block;}
+input{
+    border-radius: 10px;
+    
+    border: 1px solid #bbc0c4;
+    line-height: 1.02366864;
+   text-shadow: none;
+    text-rendering: auto;
+    background: #FFFFFF;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.linha1{
+
+    display: block;
+    width: 100%;
+}
+#div-assunto{
+    display: inline-block;
+}
+#div-email{
+    display: inline-block;
+}
+button{
+    background-color: #FFF;
+    padding: 10px;
+    border: 0.2px solid #BEBEBE;
+    border-radius: 5px;
 }
