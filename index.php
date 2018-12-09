@@ -15,9 +15,9 @@
         <img id="logo" src="img/logo.png">
         <nav>
             <ul>
-                <a><li>Home</li></a>
-                <a><li>Projetos</li></a>
-                <a><li>Contatos</li></a>
+                <a href="#"><li>Home</li></a>
+                <a href="#projetos"><li>Projetos</li></a>
+                <a href="#contato"><li>Contatos</li></a>
             </ul>
         </nav>
         <img id="foto-perfil" src="img/me2.jpg">
@@ -49,8 +49,8 @@
         </div>
     </section>
 
-    <address>
-        <h2>Contato</h2>
+    <address id="contato">
+        <h1>Vamos Conversar?</h1>
         <form>
         <div>
             <label for="nome" id="label-nome" class="label-form"></label>

@@ -186,18 +186,18 @@ address{
     top: 1500px;
     width: 100%;
     min-width: 1350px;
-    height: 500px;
+    height: 420px;
     background: linear-gradient(180deg, #F15350 0%, #BE423F 45.19%, #712726 100%);
 }
-form{
-    position: absolute;
-    top: 70px;
-    left: 55%;
-}
+    form{
+        position: absolute;
+        top: 70px;
+        left: 55%;
+    }
 
-form > div{margin: 5px;}
+    form > div{margin: 5px;}
 
-.label-form{display: block;
+    .label-form{display: block;
     color: #FFF;
     font-weight: bolder;
     font-size: 5px;
@@ -209,6 +209,7 @@ form > div{margin: 5px;}
        font-size: 16px;
 
     }
+
 input,textarea{
     border-radius: 10px;
     
@@ -235,9 +236,27 @@ input,textarea{
     display: inline-block;
 }
 
+address > h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 65px;
+
+    color: #FFF;
+    width: 30px;
+    position: absolute;
+    top:60px;
+    left: 90px;
+}
+
 button{
     background-color: #FFF;
     padding: 10px;
     border: 0.2px solid #BEBEBE;
     border-radius: 5px;
+    position: absolute;
+    top: 275px;
+    left: 425px;
+    font-weight: bold;
 }
