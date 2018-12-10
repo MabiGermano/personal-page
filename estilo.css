@@ -267,13 +267,12 @@ address > h1{
     left: 90px;
 }
 
-button{
+form > button{
     background-color: #FFF;
     padding: 10px;
     border: 0.2px solid #BEBEBE;
     border-radius: 5px;
     position: absolute;
-    top: 275px;
+    top: 285px;
     left: 425px;
-    font-weight: bold;
 }
