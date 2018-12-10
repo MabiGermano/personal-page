@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mabi Germano</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
-    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
+    <link rel='stylesheet' href="estilo.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Roboto" rel="stylesheet">
     <script src="eventos.js"></script>
 </head>
@@ -61,7 +61,7 @@
 
     <address id="contato">
         <h1>Vamos Conversar?</h1>
-        <form>
+        <form action="mailer.php" method="post">
         <div>
             <label for="nome" id="label-nome" class="label-form"></label>
             <input type="text" name="nome" id="nome" class="linha1" placeholder="Nome*" onkeydown="funcNome()" onblur="sumirNome()" alt="Nome" required>
@@ -78,7 +78,7 @@
         </div>
         <div id="div-mensagem">
             <label for="mensagem" id="label-mensagem" class="label-form"></label>
-            <textarea name="mensagem" id="mensagem" class="linha3" cols="30" rows="10" placeholder="Mensagem*" onkeydown="funcMensagem()" onblur="sumirMensagem()" alt="Mensagem" required></textarea>
+            <textarea name="mensagem" id="mensagem" class="linha3" cols="30" rows="9" placeholder="Mensagem*" onkeydown="funcMensagem()" onblur="sumirMensagem()" alt="Mensagem" required></textarea>
         </div>
         
         <button type="submit">Enviar</button>
