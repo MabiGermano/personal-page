@@ -1,13 +1,68 @@
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
     <title>Mabi Germano</title>
+
 </head>
+
 <body>
-    <div id="content"></div>
+    <main>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <a href="#home" onclick="controller.showHome()">
+                    <li>
+                        <span class="material-icons">
+                            home
+                        </span>
+                        Home
+                    </li>
+                </a>
+                <a href="#skills" onclick="controller.showSkills()">
+                    <li>
+                        <span class="material-icons">
+                            account_box
+                        </span>
+                        Skills
+                    </li>
+                </a>
+                <li>
+                    <span class="material-icons">
+                        computer
+                    </span>
+                    Portfolio
+                </li>
+                <li>
+                    <span class="material-icons">
+                        phone_iphone
+                    </span>
+                    Contact Me
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/models/Skill.js"></script>
+    <script src="js/services/SkillsService.js"></script>
+
+    <script src="js/views/View.js"></script>
+    <script src="js/views/HomeView.js"></script>
+    <script src="js/views/SkillsView.js"></script>
+
+    <script src="js/controllers/MainController.js"></script>
+    <script>
+        const controller = new MainController()
+    </script>
 </body>
+
 </html>
