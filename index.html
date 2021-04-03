@@ -15,7 +15,29 @@
 
 <body>
     <main>
-
+        <section id="portfolio">
+            <a href="">
+                <div class="card">
+                    <div>
+                        <div>
+                            <img src="img/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="Github logo">
+                            <h3>
+                                Repo name
+                            </h3>
+                        </div>
+                        <p>
+                            Application developed on bootcamp "Agora são elas no java". To match people who want to be
+                            mentor and who needs a mentor.
+                        </p>
+                    </div>
+                    <div>
+                        <button>
+                            See more
+                        </button>
+                    </div>
+                </div>
+            </a>
+        </section>
     </main>
     <footer>
         <nav>
@@ -36,12 +58,14 @@
                         Skills
                     </li>
                 </a>
-                <li>
-                    <span class="material-icons">
-                        computer
-                    </span>
-                    Portfolio
-                </li>
+                <a href="#portfolio" onclick="controller.showPortfolio()">
+                    <li>
+                        <span class="material-icons">
+                            computer
+                        </span>
+                        Portfolio
+                    </li>
+                </a>
                 <li>
                     <span class="material-icons">
                         phone_iphone
@@ -54,10 +78,12 @@
 
     <script src="js/models/Skill.js"></script>
     <script src="js/services/SkillsService.js"></script>
+    <script src="js/services/RepositoryService.js"></script>
 
     <script src="js/views/View.js"></script>
     <script src="js/views/HomeView.js"></script>
     <script src="js/views/SkillsView.js"></script>
+    <script src="js/views/PortfolioView.js"></script>
 
     <script src="js/controllers/MainController.js"></script>
     <script>

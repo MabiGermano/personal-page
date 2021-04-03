@@ -9,7 +9,7 @@ class HomeView extends View {
         <section id=presentation>
             <div>
                 <h1>Hi! I am <br />
-                    Mabi Germano</h1>
+                    <span>Mabi Germano<span></h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu felis suscipit, accumsan augue
                     vitae,

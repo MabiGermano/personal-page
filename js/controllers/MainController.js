@@ -16,4 +16,12 @@ class MainController {
         const skills = new SkillsService().getSkills()
         this._view.update(skills)
     }
+
+    async showPortfolio() {
+        this._view = new PortfolioView(this._presententionArea)
+        const repositryService = new RepositoryService()
+        const repos = await repositryService.getGithubRepositories()
+        console.log(repos)
+        this._view.update(repos)
+    }
 }
