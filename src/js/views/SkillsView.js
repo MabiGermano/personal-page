@@ -10,6 +10,9 @@ class SkillsView extends View {
         <h1>
             Technical Skills
         </h1>
+        <h3 class="subtitle"> 
+            Here are all my GitHub repositories, if you are interested to know more, please feel free to check it out
+        </h3>
         ${skills.map((skill) => {
             return `<div>
                         <div>
@@ -20,7 +23,7 @@ class SkillsView extends View {
                     </div>
                     `
                 }).join('')}
-                
+
         </section>
         `
     }

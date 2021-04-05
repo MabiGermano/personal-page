@@ -1,0 +1,159 @@
+:root {
+    --color-line-light: #c3c3c3;
+    --background-color: #2B2C43;
+    --details-color: #EDAD0A;
+    --default-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --default-transparency: rgba(255, 255, 255, 0.5);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+body {
+    background: var(--background-color);
+    padding-bottom: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    padding-top: 1rem;
+
+    background: rgba(255, 255, 255, 0.33);
+}
+
+#logo {
+    color: var(--details-color);
+}
+
+#logo h1 {
+    margin: 0;
+}
+
+nav>div {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+nav>div .material-icons {
+    font-size: 2.1rem;
+    color: white;
+}
+
+ul[data-device="mobile"] {
+    padding: 0;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: var(--default-shadow);
+
+    font-weight: 700;
+    list-style: none;
+    text-align: center;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    max-height: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+ul[data-device="mobile"].active {
+    overflow: hidden;
+    visibility: visible;
+    max-height: 200px;
+    transition: max-height .5s ease-in-out;
+}
+
+ul[data-device="mobile"] li {
+    padding: 0.5rem 0;
+    border-bottom: solid 1px var(--color-line-light);
+    color: black;
+}
+
+header img {
+    width: 100%;
+}
+
+header div > img {
+    background: rgba(255, 255, 255, 0.33);
+    padding-top: 2rem;
+}
+
+header div#presentation {
+    padding: 0 1rem;
+}
+
+header div#presentation h1{
+    text-align: center;
+}
+
+header div#presentation h1 strong {
+    color: var(--details-color);
+}
+
+header div#presentation p {
+    text-align: justify;
+}
+
+
+.line-decoration {
+    font-size: .1rem;
+    margin-right: .5rem;
+}
+
+.line-decoration::before {
+    display: inline-block;
+    content: '';
+    width: 3rem;
+    border-top: .25rem solid  var(--details-color);
+}
+
+
+section {
+    padding: 0 1rem 2rem 1rem;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+}
+
+.section-title h4 {
+    font-size: 1.4rem;
+}
+
+.card {
+    background: var(--default-transparency);
+    box-shadow: var(--default-shadow);
+    padding: 0 .3rem;
+}
+
+.primary-card {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+section#work .card .material-icons {
+    font-size: 3rem;
+    margin: 0 .3rem;
+}
+
+section#work .card h4,
+section#work .card p {
+    margin: .5rem;
+    color: black;
+    text-align: justify;
+}

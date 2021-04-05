@@ -6,88 +6,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="src/assets/css/global.css">
     <title>Mabi Germano</title>
 
 </head>
 
 <body>
-    <main>
-        <section id="portfolio">
-            <a href="">
-                <div class="card">
-                    <div>
-                        <div>
-                            <img src="img/GitHub-Mark/PNG/GitHub-Mark-120px-plus.png" alt="Github logo">
-                            <h3>
-                                Repo name
-                            </h3>
-                        </div>
-                        <p>
-                            Application developed on bootcamp "Agora são elas no java". To match people who want to be
-                            mentor and who needs a mentor.
-                        </p>
-                    </div>
-                    <div>
-                        <button>
-                            See more
-                        </button>
-                    </div>
-                </div>
-            </a>
-        </section>
-    </main>
-    <footer>
+
+    <header>
         <nav>
-            <ul>
-                <a href="#home" onclick="controller.showHome()">
-                    <li>
-                        <span class="material-icons">
-                            home
-                        </span>
-                        Home
-                    </li>
-                </a>
-                <a href="#skills" onclick="controller.showSkills()">
-                    <li>
-                        <span class="material-icons">
-                            account_box
-                        </span>
-                        Skills
-                    </li>
-                </a>
-                <a href="#portfolio" onclick="controller.showPortfolio()">
-                    <li>
-                        <span class="material-icons">
-                            computer
-                        </span>
-                        Portfolio
-                    </li>
-                </a>
-                <li>
+            <div id="logo">
+                <h1>MabiGermano</h1>
+            </div>
+
+            <div>
+                <div onclick="teste()">
                     <span class="material-icons">
-                        phone_iphone
+                        widgets
                     </span>
-                    Contact Me
-                </li>
-            </ul>
+                </div>
+
+            </div>
         </nav>
-    </footer>
+        <ul data-device="mobile">
+            <li>
+                Home
+            </li>
+            <li>
+                Work
+            </li>
+            <li>
+                About
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
 
-    <script src="js/models/Skill.js"></script>
-    <script src="js/services/SkillsService.js"></script>
-    <script src="js/services/RepositoryService.js"></script>
 
-    <script src="js/views/View.js"></script>
-    <script src="js/views/HomeView.js"></script>
-    <script src="js/views/SkillsView.js"></script>
-    <script src="js/views/PortfolioView.js"></script>
+        <div>
+            <img src="src/assets/img/image-mabi.png" alt="Mabi Germano picture">
+        </div>
+        <div id="presentation">
+            <h1>
+                Hi! I am <strong>Mabi Germano</strong>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                eu
+                felis suscipit, accumsan augue vitae, cursus lorem. Proin at urna pulvinar, tristique nisi sit amet,
+                aliquet
+                risus.
+            </p>
+        </div>
+    </header>
 
-    <script src="js/controllers/MainController.js"></script>
+
+    <section id="work">
+        <div class="section-title">
+            <span class="line-decoration">
+            </span>
+            <h4>Work</h4>
+        </div>
+
+        <div class="card primary-card">
+            <span class="material-icons">
+                web
+            </span>
+            <div>
+                <h4>
+                    Web Applications
+                </h4>
+                <p>
+                    Building web applications both the backend and the frontend.
+                </p>
+            </div>
+        </div>
+
+        <div class="card primary-card">
+            <span class="material-icons">
+                settings
+            </span>
+            <div>
+                <h4>
+                    Rest API
+                </h4>
+                <p>
+                    I’ve been working on API rest applications since 2018.
+                </p>
+            </div>
+        </div>
+
+        <div class="card primary-card">
+            <span class="material-icons">
+                cloud
+            </span>
+            <div>
+                <h4>
+                    Cloud infrastructure
+                </h4>
+                <p>
+                    Strong knowledge in the operation and how to use SDKs to connect to some cloud providers.
+                </p>
+            </div>
+        </div>
+
+        <div class="card primary-card">
+            <span class="material-icons">
+                web
+            </span>
+            <div>
+                <h4>
+                    If do you want see more...
+                </h4>
+                <p>
+                    You can click here to see more about my personal projects and what I’m learning now.
+                </p>
+            </div>
+        </div>
+
+    </section>
     <script>
-        const controller = new MainController()
+        function teste() {
+            console.log("teste")
+            const element = document.querySelector('[data-device="mobile"]')
+            element.classList.toggle('active')
+
+        }
     </script>
 </body>
 

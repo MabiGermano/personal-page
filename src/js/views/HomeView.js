@@ -27,7 +27,7 @@ class HomeView extends View {
                 </button>
             </div>
             <div>
-                <img src="image-mabi.png" alt="Foto Mabi">
+                <img src="img/image-mabi.png" alt="Foto Mabi">
             </div>
             </section>`
     }
