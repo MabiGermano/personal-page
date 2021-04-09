@@ -14,7 +14,7 @@
 
 </head>
 
-<body>
+<body onscroll="scrollFunction()">
 
     <header>
         <nav>
@@ -174,14 +174,14 @@
         </h3>
 
         <div class="technologies carousel">
-            <img src="src/assets/img/javascript_icon.png" alt="Javascript Icon"/>
-            <img src="src/assets/img/java_icon.png" alt="Java Icon"/>
-            <img src="src/assets/img/springboot_icon.png" alt="Springboot Icon"/>
-            <img src="src/assets/img/node_icon.png" alt="NodeJs Icon"/>
-            <img src="src/assets/img/react_icon.png" alt="ReactJs Icon"/>
-            <img src="src/assets/img/kotlin_icon.png" alt="Kotlin Icon"/>
-            <img src="src/assets/img/php_icon.png" alt="PHP Icon"/>
-            <img src="src/assets/img/sql_icon.png" alt="SQL Icon"/>
+            <img src="src/assets/img/javascript_icon.png" alt="Javascript Icon" />
+            <img src="src/assets/img/java_icon.png" alt="Java Icon" />
+            <img src="src/assets/img/springboot_icon.png" alt="Springboot Icon" />
+            <img src="src/assets/img/node_icon.png" alt="NodeJs Icon" />
+            <img src="src/assets/img/react_icon.png" alt="ReactJs Icon" />
+            <img src="src/assets/img/kotlin_icon.png" alt="Kotlin Icon" />
+            <img src="src/assets/img/php_icon.png" alt="PHP Icon" />
+            <img src="src/assets/img/sql_icon.png" alt="SQL Icon" />
         </div>
 
         <button>
@@ -195,6 +195,13 @@
             console.log("teste")
             const element = document.querySelector('[data-device="mobile"]')
             element.classList.toggle('active')
+        }
+
+        function scrollFunction() {
+            const nav = document.querySelector('nav');
+            document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ?
+                nav.classList.add('filled') :
+                nav.classList.remove('filled')
 
         }
     </script>
