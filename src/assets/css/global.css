@@ -86,7 +86,7 @@ header img {
     width: 100%;
 }
 
-header div > img {
+header div>img {
     background: rgba(255, 255, 255, 0.33);
     padding-top: 2rem;
 }
@@ -95,7 +95,7 @@ header div#presentation {
     padding: 0 1rem;
 }
 
-header div#presentation h1{
+header div#presentation h1 {
     text-align: center;
 }
 
@@ -117,7 +117,7 @@ header div#presentation p {
     display: inline-block;
     content: '';
     width: 3rem;
-    border-top: .25rem solid  var(--details-color);
+    border-top: .25rem solid var(--details-color);
 }
 
 
@@ -146,14 +146,61 @@ section {
     margin: 1rem 0;
 }
 
+.secondary-card {
+    margin: 0;
+    padding: 0;
+}
+
+.secondary-card img {
+    width: 100%;
+}
+
+.secondary-card div {
+    padding: 1rem;
+}
+
+.secondary-card div h4 {
+    margin: 0;
+}
+
 section#work .card .material-icons {
     font-size: 3rem;
     margin: 0 .3rem;
 }
 
-section#work .card h4,
-section#work .card p {
+section#work .primary-card h4,
+section#work .primary-card p {
     margin: .5rem;
     color: black;
     text-align: justify;
+}
+
+section#work .card h4 {
+    font-size: 1.1rem;
+}
+
+section h3 {
+    color: var(--details-color);
+    font-weight: 300;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel .card {
+    width: 15rem;
+    flex: 0 0 auto;
+}
+
+.carousel .card {
+    margin-right: 1rem;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
 }
