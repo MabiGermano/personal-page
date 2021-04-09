@@ -2,6 +2,7 @@
     --color-line-light: #c3c3c3;
     --background-color: #2B2C43;
     --details-color: #EDAD0A;
+    --details-color-darker: #d69a00; 
     --default-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --default-transparency: rgba(255, 255, 255, 0.5);
 }
@@ -30,6 +31,28 @@ nav {
     padding-top: 1rem;
 
     background: rgba(255, 255, 255, 0.33);
+}
+
+p {
+    text-align: justify;
+}
+
+button {
+    background-color: var(--details-color);
+    border: 0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: var(--default-shadow);
+    transition: 0.2s background-color;
+}
+
+button:hover {
+    background-color: var(--details-color-darker);
+}
+
+button:focus {
+    outline: none;
 }
 
 #logo {
@@ -163,7 +186,9 @@ section {
     margin: 0;
 }
 
+section#work .card.primary-card img,
 section#work .card .material-icons {
+    width: 3rem;
     font-size: 3rem;
     margin: 0 .3rem;
 }
@@ -203,4 +228,17 @@ section h3 {
 
 .carousel::-webkit-scrollbar {
     display: none;
+}
+
+section#about button {
+    width: 100%;
+    padding: .5rem;
+}
+
+section#about .technologies {
+    margin: 2rem 0;
+}
+
+section#about .technologies img + img{
+    margin: .3rem;
 }
