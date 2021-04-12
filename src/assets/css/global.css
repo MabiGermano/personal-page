@@ -2,16 +2,17 @@
     --color-line-light: #c3c3c3;
     --background-color: #2B2C43;
     --details-color: #EDAD0A;
-    --details-color-darker: #d69a00; 
+    --details-color-darker: #d69a00;
     --default-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     --default-transparency: rgba(255, 255, 255, 0.5);
+    --default-font-family: 'Nunito', sans-serif;
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--default-font-family);
     color: white;
 }
 
@@ -48,6 +49,7 @@ button {
     font-weight: 700;
     box-shadow: var(--default-shadow);
     transition: 0.2s background-color;
+    font-family: var(--default-font-family);
 }
 
 button:hover {
@@ -163,6 +165,7 @@ section {
 
 .section-title h4 {
     font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .card {
@@ -215,6 +218,8 @@ section#work .card h4 {
 section h3 {
     color: var(--details-color);
     font-weight: 300;
+
+    margin-top: 3rem;
 }
 
 .carousel {
@@ -222,7 +227,7 @@ section h3 {
     flex-wrap: nowrap;
     overflow-x: auto;
 
-  -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 }
 
 .carousel .card {
@@ -247,6 +252,68 @@ section#about .technologies {
     margin: 2rem 0;
 }
 
-section#about .technologies img + img{
+section#about .technologies img+img {
     margin: .3rem;
+}
+
+
+section#contact p span {
+    color: var(--details-color);
+}
+
+.media-box {
+    display: flex;
+    align-items: center;
+}
+
+.media-box a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    transition: .5s color;
+}
+
+.media-box a:hover {
+    color: var(--details-color);
+}
+
+.media-box img {
+    margin-right: 1rem;
+}
+
+
+@media screen and (min-width: 700px) {
+    header {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.33);
+        display: flex;
+    }
+
+    header div>img {
+        background: transparent;
+    }
+
+    header>div {
+        margin: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    [data-device="mobile"] {
+        display: none;
+    }
+
+    ul[data-device="desktop"] {
+        list-style: none;
+        width: 50%;
+        margin: 0 1rem;
+        display: flex;
+        justify-content:  space-evenly;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
 }
