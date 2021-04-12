@@ -78,7 +78,11 @@ nav>div .material-icons {
     color: white;
 }
 
+ul[data-device="desktop"] {
+    display: none;
+}
 ul[data-device="mobile"] {
+    display: block;
     padding: 0;
     box-shadow: var(--default-shadow);
 
@@ -302,7 +306,7 @@ section#contact p span {
         justify-content: center;
     }
 
-    [data-device="mobile"] {
+    ul[data-device="mobile"], div#mobile-menu{
         display: none;
     }
 
@@ -315,5 +319,5 @@ section#contact p span {
         font-size: 1.2rem;
         font-weight: 700;
     }
-    
+
 }

@@ -37,13 +37,12 @@
                 </li>
             </ul>
 
-            <div data-device="mobile">
+            <div id="mobile-menu">
                 <div onclick="teste()">
                     <span class="material-icons">
                         widgets
                     </span>
                 </div>
-
             </div>
         </nav>
         <ul data-device="mobile">
@@ -235,6 +234,7 @@
         function teste() {
             console.log("teste")
             const element = document.querySelector('[data-device="mobile"]')
+            console.log(element);
             element.classList.toggle('active')
         }
 
