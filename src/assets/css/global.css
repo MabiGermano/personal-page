@@ -159,7 +159,7 @@ header div#presentation p {
 
 
 section {
-    padding: 0 1rem 2rem 1rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .section-title {
@@ -318,6 +318,21 @@ section#contact p span {
         justify-content:  space-evenly;
         font-size: 1.2rem;
         font-weight: 700;
+    }
+
+    div#description-cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; 
+        justify-content: space-between;
+    }
+    div#description-cards div.card {
+       width: 48%;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: space-evenly;
     }
 
 }
